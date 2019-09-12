@@ -5,7 +5,9 @@ date: "9/12/2019"
 output: html_document
 ---
 
-Understanding Concepts
+
+
+#Understanding Concepts
 1)Write a paragraph (~200 words) describing an example of what you consider data science to be. Include a link to at least one reference that includes a meaningful visualization or insightful data analysis. It can be anything you find interesting!
 
   - An example of what I believe data science to be is going to be directly related to the research team I was a part of at Washington State University's Center for Precision and Automated Agricultural Systems. The team was mainly made up of Biosystems Engineers, using robotics and machine learning in order to lighten the work load on seasonal workers in Washington State during harvests. Washington mainly grows apples, cherries, grapes, and hops for beer, all of which require meticuluous handling from manual labor workers, which is costly and ineffective for prolonged periods of time since harvesting season is mainly in the summer. So, the solutions being developed were to use precise robotic arms to pick the fruit instead, using machine learning algorithms to help the arm(s) recognize which fruit to be targetting. This was a great experience for someone like me who is trying to become a professional in this field!
@@ -22,8 +24,32 @@ Understanding Concepts
 3) Look up one Github feature (for example, branching) that we did not discuss in class and explain (as if to a non-technical person) what this feature does and why it may be useful. Provide a minimal working example of how to use this Github feature.
   - One feature that we didn't talk about in class is the URL shortener for Github accounts. Usually, whenever one tries to connect their local repository to the remote repository on their Github account, they have to type the entire URL of the remote repository into the terminal. Github has a facility that allows users to shorten their repository URL's on Git.io, which will shorten your repository's URL. There is also a way to shorten URL's in the command line using the gitio command.
   
-4) R is very widely used by data scientists mainly because, the functions in R are intuitive enough to where you don't need to be a genius at programming to write your own R code, R is very much so compatible with Github and other file sharing services which allow for ease of access, and increased collaboration. R also has many functions in its libraries specified toward data visualization, which is imperative when trying to explain your results/data to someone who would normally be overwhelmed by looking at a spreadsheet with thousands of records and tens of fields.
+4)R is extremely popular among statisticians and data scientists. It, in conjunction with Python, is one of the many languages in their toolkit. Why do you think so many statisticians/data scientist/academics choose to use R? List 3 reasons that explain why R is so useful in data science. 
+  - R is very widely used by data scientists mainly because, the functions in R are intuitive enough to where you don't need to be a genius at programming to write your own R code, R is very much so compatible with Github and other file sharing services which allow for ease of access, and increased collaboration. R also has many functions in its libraries specified toward data visualization, which is imperative when trying to explain your results/data to someone who would normally be overwhelmed by looking at a spreadsheet with thousands of records and tens of fields.
 
+#Worked with Eric Friesth on all problems from this point forward.
 
+#R Basics
+5) In class we wrote a function for sample variance. 
 
+Write an R function to calculate variance and call this function my_var.
 
+Then apply this my_var function to the vector x=c(-1.308, 1.233,-1.210, -1.159, -0.590, -0.031, 0.479, 0.423, 1.483, 0.174) and print your answer.
+
+```{r, eval=FALSE}
+my_var <- function(x){
+  vec_length = length(x) #length of the vector, used in the summation
+  average = mean(x) #calculating average
+  diff = x - average #finding the difference between each value in the vector and the average
+  diff_squared = diff^2 #squaring the differences
+  sumOfDiff =  sum(diff_squared) #doing the summation of all of the squared values
+  estimation_constant = 1/(n - 1) # constant 1/n-1 from the formula for variance
+  variance = estimation_constant * sumOfDiff #calculating variance 
+  
+  variance
+}
+print(my_var(x))
+
+print(var(x)) #built in function var finds variance, used here to double check my answer
+
+```
