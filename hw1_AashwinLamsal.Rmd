@@ -8,6 +8,7 @@ output: html_document
 
 
 #Understanding Concepts
+
 1)Write a paragraph (~200 words) describing an example of what you consider data science to be. Include a link to at least one reference that includes a meaningful visualization or insightful data analysis. It can be anything you find interesting!
 
   - An example of what I believe data science to be is going to be directly related to the research team I was a part of at Washington State University's Center for Precision and Automated Agricultural Systems. The team was mainly made up of Biosystems Engineers, using robotics and machine learning in order to lighten the work load on seasonal workers in Washington State during harvests. Washington mainly grows apples, cherries, grapes, and hops for beer, all of which require meticuluous handling from manual labor workers, which is costly and ineffective for prolonged periods of time since harvesting season is mainly in the summer. So, the solutions being developed were to use precise robotic arms to pick the fruit instead, using machine learning algorithms to help the arm(s) recognize which fruit to be targetting. This was a great experience for someone like me who is trying to become a professional in this field!
@@ -30,6 +31,7 @@ output: html_document
 #Worked with Eric Friesth on all problems from this point forward.
 
 #R Basics
+
 5) In class we wrote a function for sample variance. 
 
 Write an R function to calculate variance and call this function my_var.
