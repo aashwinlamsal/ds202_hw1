@@ -70,6 +70,15 @@ print(cel)
 
 ```
 
+7)Create a vector of length 200. The odd entries should be 1 and even entries should be 0. Storage the created in a variable named vec200 and print.
+
+```{r, eval=FALSE}
+vec200 <- c(1:200) #vec200 created, with values 1-200 inside
+vec200[vec200 %% 2 ==0 ] = 0 #at even indices, the value will be replaced by 0
+vec200[vec200 %% 2 !=0 ] = 1 #at odd indices, the value will be replaced by 1
+      
+vec200 #print vec200
+```
 
 
 
