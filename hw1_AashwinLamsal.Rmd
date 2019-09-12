@@ -79,9 +79,38 @@ vec200[vec200 %% 2 !=0 ] = 1 #at odd indices, the value will be replaced by 1
       
 vec200 #print vec200
 ```
+8) R includes a function called which.max.
+
+How many arguments does the function have? Describe each of them. Hint: try ?which.max
+  -The function which.max has 1 argument, it takes in a vector!
+
+What does the which.max function do?
+  -The function which.max returns the position index of the element with the maximal value in a given vector.
+
+Give an example of what it does with the vector c(3, -1, 4, 2.5).
+```{r, eval=FALSE}
+new_vec <- c(3, -1, 4, 2.5) # the max value in this vector is 4
+print(which.max(new_vec)) # which.max returns the position index of the highest value element, 4 is at index 3, so our result should show 3
+
+
+```
+
+What happens if there is a tie? How did you figure this out?
+
+```{r, eval=FALSE}
+new_vec2 <- c(3, -1, 4,4,4,4,2,0)
+print(which.max(new_vec2))
+
+new_vec2 <- c(3, -1, 0,4,4,4,2,0)
+print(which.max(new_vec2))
+
+#based on my findings above, I believe that if a tie were to occur, the position index of the first instance of that maximal value is what will be returned
 
 
 
+```
+
+9) Done in class during Lecture 5.
 
 
 
