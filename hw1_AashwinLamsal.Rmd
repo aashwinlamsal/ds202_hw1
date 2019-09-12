@@ -5,26 +5,25 @@ date: "9/12/2019"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+Understanding Concepts
+1)Write a paragraph (~200 words) describing an example of what you consider data science to be. Include a link to at least one reference that includes a meaningful visualization or insightful data analysis. It can be anything you find interesting!
 
-## R Markdown
+  - An example of what I believe data science to be is going to be directly related to the research team I was a part of at Washington State University's Center for Precision and Automated Agricultural Systems. The team was mainly made up of Biosystems Engineers, using robotics and machine learning in order to lighten the work load on seasonal workers in Washington State during harvests. Washington mainly grows apples, cherries, grapes, and hops for beer, all of which require meticuluous handling from manual labor workers, which is costly and ineffective for prolonged periods of time since harvesting season is mainly in the summer. So, the solutions being developed were to use precise robotic arms to pick the fruit instead, using machine learning algorithms to help the arm(s) recognize which fruit to be targetting. This was a great experience for someone like me who is trying to become a professional in this field!
+  
+2) Look up one Git command that we did not discuss in class and explain (as if to a non-technical person) what this command does and why it may be useful. Provide a minimal working example of how to use this Git command.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+  - A command that I don't think we've talked about in class is git merge. git merge is used to merge a specified branch's (pointer that points to a commit) history into the current working branch.
+  Ex. the default branch is called master, but if we wanted to merge master with a new branch, we would type:
+  
+  git merge branch_x
+  
+  So now the work being done on the master branch has merged with the new branch, branch_x.
+  
+3) Look up one Github feature (for example, branching) that we did not discuss in class and explain (as if to a non-technical person) what this feature does and why it may be useful. Provide a minimal working example of how to use this Github feature.
+  - One feature that we didn't talk about in class is the URL shortener for Github accounts. Usually, whenever one tries to connect their local repository to the remote repository on their Github account, they have to type the entire URL of the remote repository into the terminal. Github has a facility that allows users to shorten their repository URL's on Git.io, which will shorten your repository's URL. There is also a way to shorten URL's in the command line using the gitio command.
+  
+4) R is very widely used by data scientists mainly because, the functions in R are intuitive enough to where you don't need to be a genius at programming to write your own R code, R is very much so compatible with Github and other file sharing services which allow for ease of access, and increased collaboration. R also has many functions in its libraries specified toward data visualization, which is imperative when trying to explain your results/data to someone who would normally be overwhelmed by looking at a spreadsheet with thousands of records and tens of fields.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
-```{r cars}
-summary(cars)
-```
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
