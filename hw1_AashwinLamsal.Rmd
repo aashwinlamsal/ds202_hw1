@@ -53,3 +53,26 @@ print(my_var(x))
 print(var(x)) #built in function var finds variance, used here to double check my answer
 
 ```
+
+6) Today’s temperature has a high of 15 and a low of -10 degree fahrenheit. Find the corresponding degrees in celsius and storage it in a (single) vector named cel. Print the variable.
+```{r, eval=FALSE}
+f_to_c <- function(x){
+  fahrenheit = x
+  celsius = (fahrenheit - 32) * (5/9) #fahrenheit to celsius conversion formula
+  
+  celsius
+}
+
+f_to_c(32) #checking to see if the conversion result is accurate
+
+cel <- c(cel, f_to_c(15), f_to_c(-10)) #adding the converted celsius measures to the cel vector
+print(cel)
+
+```
+
+
+
+
+
+
+
